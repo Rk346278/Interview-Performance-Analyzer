@@ -1,0 +1,386 @@
+{
+  "dataset": {
+    "rows": 10000,
+    "features": [
+      "StudentID",
+      "CGPA",
+      "Internships",
+      "Projects",
+      "Workshops/Certifications",
+      "AptitudeTestScore",
+      "SoftSkillsRating",
+      "ExtracurricularActivities",
+      "PlacementTraining",
+      "SSC_Marks",
+      "HSC_Marks"
+    ],
+    "target": "PlacementStatus",
+    "class_distribution": {
+      "0": 5803,
+      "1": 4197
+    },
+    "train_size": 8000,
+    "test_size": 2000
+  },
+  "unavailable_libraries": [
+    "xgboost",
+    "lightgbm",
+    "catboost"
+  ],
+  "results": [
+    {
+      "model": "Logistic Regression",
+      "accuracy": 0.7925,
+      "precision": 0.741,
+      "recall": 0.7669,
+      "f1_score": 0.7537,
+      "train_accuracy": 0.8001,
+      "test_accuracy": 0.7925,
+      "train_test_gap": 0.0076,
+      "fit_status": "good generalization",
+      "confusion_matrix": [
+        [
+          950,
+          222
+        ],
+        [
+          193,
+          635
+        ]
+      ],
+      "rank": 1
+    },
+    {
+      "model": "Random Forest",
+      "accuracy": 0.788,
+      "precision": 0.7557,
+      "recall": 0.721,
+      "f1_score": 0.7379,
+      "train_accuracy": 0.9999,
+      "test_accuracy": 0.788,
+      "train_test_gap": 0.2119,
+      "fit_status": "overfitting",
+      "confusion_matrix": [
+        [
+          979,
+          193
+        ],
+        [
+          231,
+          597
+        ]
+      ],
+      "rank": 6
+    },
+    {
+      "model": "Extra Trees",
+      "accuracy": 0.793,
+      "precision": 0.7568,
+      "recall": 0.7367,
+      "f1_score": 0.7466,
+      "train_accuracy": 1.0,
+      "test_accuracy": 0.793,
+      "train_test_gap": 0.207,
+      "fit_status": "overfitting",
+      "confusion_matrix": [
+        [
+          976,
+          196
+        ],
+        [
+          218,
+          610
+        ]
+      ],
+      "rank": 4
+    },
+    {
+      "model": "Gradient Boosting",
+      "accuracy": 0.7895,
+      "precision": 0.7509,
+      "recall": 0.7355,
+      "f1_score": 0.7431,
+      "train_accuracy": 0.8213,
+      "test_accuracy": 0.7895,
+      "train_test_gap": 0.0318,
+      "fit_status": "good generalization",
+      "confusion_matrix": [
+        [
+          970,
+          202
+        ],
+        [
+          219,
+          609
+        ]
+      ],
+      "rank": 5
+    },
+    {
+      "model": "AdaBoost",
+      "accuracy": 0.792,
+      "precision": 0.75,
+      "recall": 0.7464,
+      "f1_score": 0.7482,
+      "train_accuracy": 0.8031,
+      "test_accuracy": 0.792,
+      "train_test_gap": 0.0111,
+      "fit_status": "good generalization",
+      "confusion_matrix": [
+        [
+          966,
+          206
+        ],
+        [
+          210,
+          618
+        ]
+      ],
+      "rank": 3
+    },
+    {
+      "model": "SVM",
+      "accuracy": 0.795,
+      "precision": 0.7555,
+      "recall": 0.7464,
+      "f1_score": 0.7509,
+      "train_accuracy": 0.8146,
+      "test_accuracy": 0.795,
+      "train_test_gap": 0.0196,
+      "fit_status": "good generalization",
+      "confusion_matrix": [
+        [
+          972,
+          200
+        ],
+        [
+          210,
+          618
+        ]
+      ],
+      "rank": 2
+    },
+    {
+      "model": "KNN",
+      "accuracy": 0.771,
+      "precision": 0.7273,
+      "recall": 0.715,
+      "f1_score": 0.7211,
+      "train_accuracy": 0.8381,
+      "test_accuracy": 0.771,
+      "train_test_gap": 0.0671,
+      "fit_status": "overfitting",
+      "confusion_matrix": [
+        [
+          950,
+          222
+        ],
+        [
+          236,
+          592
+        ]
+      ],
+      "rank": 7
+    },
+    {
+      "model": "Decision Tree (baseline)",
+      "accuracy": 0.7205,
+      "precision": 0.6611,
+      "recall": 0.6667,
+      "f1_score": 0.6639,
+      "train_accuracy": 1.0,
+      "test_accuracy": 0.7205,
+      "train_test_gap": 0.2795,
+      "fit_status": "overfitting",
+      "confusion_matrix": [
+        [
+          889,
+          283
+        ],
+        [
+          276,
+          552
+        ]
+      ],
+      "rank": 8
+    }
+  ],
+  "ranking": [
+    {
+      "model": "Logistic Regression",
+      "accuracy": 0.7925,
+      "precision": 0.741,
+      "recall": 0.7669,
+      "f1_score": 0.7537,
+      "train_accuracy": 0.8001,
+      "test_accuracy": 0.7925,
+      "train_test_gap": 0.0076,
+      "fit_status": "good generalization",
+      "confusion_matrix": [
+        [
+          950,
+          222
+        ],
+        [
+          193,
+          635
+        ]
+      ],
+      "rank": 1
+    },
+    {
+      "model": "SVM",
+      "accuracy": 0.795,
+      "precision": 0.7555,
+      "recall": 0.7464,
+      "f1_score": 0.7509,
+      "train_accuracy": 0.8146,
+      "test_accuracy": 0.795,
+      "train_test_gap": 0.0196,
+      "fit_status": "good generalization",
+      "confusion_matrix": [
+        [
+          972,
+          200
+        ],
+        [
+          210,
+          618
+        ]
+      ],
+      "rank": 2
+    },
+    {
+      "model": "AdaBoost",
+      "accuracy": 0.792,
+      "precision": 0.75,
+      "recall": 0.7464,
+      "f1_score": 0.7482,
+      "train_accuracy": 0.8031,
+      "test_accuracy": 0.792,
+      "train_test_gap": 0.0111,
+      "fit_status": "good generalization",
+      "confusion_matrix": [
+        [
+          966,
+          206
+        ],
+        [
+          210,
+          618
+        ]
+      ],
+      "rank": 3
+    },
+    {
+      "model": "Extra Trees",
+      "accuracy": 0.793,
+      "precision": 0.7568,
+      "recall": 0.7367,
+      "f1_score": 0.7466,
+      "train_accuracy": 1.0,
+      "test_accuracy": 0.793,
+      "train_test_gap": 0.207,
+      "fit_status": "overfitting",
+      "confusion_matrix": [
+        [
+          976,
+          196
+        ],
+        [
+          218,
+          610
+        ]
+      ],
+      "rank": 4
+    },
+    {
+      "model": "Gradient Boosting",
+      "accuracy": 0.7895,
+      "precision": 0.7509,
+      "recall": 0.7355,
+      "f1_score": 0.7431,
+      "train_accuracy": 0.8213,
+      "test_accuracy": 0.7895,
+      "train_test_gap": 0.0318,
+      "fit_status": "good generalization",
+      "confusion_matrix": [
+        [
+          970,
+          202
+        ],
+        [
+          219,
+          609
+        ]
+      ],
+      "rank": 5
+    },
+    {
+      "model": "Random Forest",
+      "accuracy": 0.788,
+      "precision": 0.7557,
+      "recall": 0.721,
+      "f1_score": 0.7379,
+      "train_accuracy": 0.9999,
+      "test_accuracy": 0.788,
+      "train_test_gap": 0.2119,
+      "fit_status": "overfitting",
+      "confusion_matrix": [
+        [
+          979,
+          193
+        ],
+        [
+          231,
+          597
+        ]
+      ],
+      "rank": 6
+    },
+    {
+      "model": "KNN",
+      "accuracy": 0.771,
+      "precision": 0.7273,
+      "recall": 0.715,
+      "f1_score": 0.7211,
+      "train_accuracy": 0.8381,
+      "test_accuracy": 0.771,
+      "train_test_gap": 0.0671,
+      "fit_status": "overfitting",
+      "confusion_matrix": [
+        [
+          950,
+          222
+        ],
+        [
+          236,
+          592
+        ]
+      ],
+      "rank": 7
+    },
+    {
+      "model": "Decision Tree (baseline)",
+      "accuracy": 0.7205,
+      "precision": 0.6611,
+      "recall": 0.6667,
+      "f1_score": 0.6639,
+      "train_accuracy": 1.0,
+      "test_accuracy": 0.7205,
+      "train_test_gap": 0.2795,
+      "fit_status": "overfitting",
+      "confusion_matrix": [
+        [
+          889,
+          283
+        ],
+        [
+          276,
+          552
+        ]
+      ],
+      "rank": 8
+    }
+  ]
+}
